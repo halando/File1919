@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class LoadFile {
 
+       static final String FILE_NAME = "kontenerkft.txt";
     public LoadFile() {
     }
 
@@ -21,7 +22,7 @@ public class LoadFile {
 
     public static ArrayList<Employee> tryload() throws FileNotFoundException {
         ArrayList<Employee> employeeList = new ArrayList<>();
-        File file = new File("kontenerkft.txt");
+        File file = new File(FILE_NAME);
         Scanner scanner = new Scanner(file, "utf-8");
         //String firstRow = scanner.nextLine();
         while(scanner.hasNext()){

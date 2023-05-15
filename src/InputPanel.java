@@ -3,6 +3,7 @@ import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 
 public class InputPanel  extends JPanel{
@@ -27,6 +28,7 @@ public class InputPanel  extends JPanel{
         this.add(this.field);
        // this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
         this.setLayout(new GridLayout(1,2));
+        this.setBorder(new EmptyBorder(5,10,5,10));
     }
     public void setLabel(String text){
         this.label.setText(text);
